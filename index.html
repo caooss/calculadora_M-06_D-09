@@ -4,18 +4,20 @@
 		<title>Calculadora - v.0.1</title>
 	</head>
 	<body>
-		<form>
+		<form action="processa.php" method="get">
+
 			<label>Primeiro Valor:</label>
 			<input type="number" name="valor1" />
-			
+
 			<select name="operacao">
 				<option value="+">+</option>
 				<option value="-">-</option>
+				<option value="*">X</option>
 			</select>
-			
+
 			<label>Segundo Valor:</label>
 			<input type="number" name="valor2" />
-			
+
 			<input type="submit" value="Calcular" />
 		</form>
 	</body>
