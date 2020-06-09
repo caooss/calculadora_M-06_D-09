@@ -1,24 +1,80 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 	<head>
+		<meta charset="utf-8">
 		<title>Calculadora - v.0.1</title>
 	</head>
 	<body>
 		<form action="processa.php" method="get">
+			<center><h1>Calculadora</h1></center>
+			<center><table border="5" cellpadding="9" cellspacing="9"></center>
 
-			<label>Primeiro Valor:</label>
-			<input type="number" name="valor1" />
+				<tr>
+					<th colspan="5" align="right">
+						<label></label>
+						<input type="number" name="valor1" />
 
-			<select name="operacao">
-				<option value="+">+</option>
-				<option value="-">-</option>
-				<option value="*">X</option>
-			</select>
+						<select name="operacao">
+							<option value="+">+</option>
+							<option value="-">-</option>
+							<option value="*">X</option>
+							<option value="/">÷</option>
+						</select>
 
-			<label>Segundo Valor:</label>
-			<input type="number" name="valor2" />
+						<label></label>
+						<input type="number" name="valor2" />
+					</th>
+				</tr>
 
-			<input type="submit" value="Calcular" />
+				<tr align="center">
+					<th>MC</th>
+					<th>MR</th>
+					<th>MS</th>
+					<th>M+</th>
+					<th>M-</th>
+				</tr>
+
+				<tr align="center">
+					<th>←</th>
+					<th>CE</th>
+					<th>C</th>
+					<th>±</th>
+					<th>√</th>
+				</tr>
+
+				<tr align="center">
+					<th>7</th>
+					<th>8</th>
+					<th>9</th>
+					<th>/</th>
+					<th>%</th>
+				</tr>
+
+				<tr align="center">
+					<th>4</th>
+					<th>5</th>
+					<th>6</th>
+					<th>*</th>
+					<th>1/x</th>
+				</tr>
+
+				<tr align="center">
+					<th>1</th>
+					<th>2</th>
+					<th>3</th>
+					<th>-</th>
+					<th rowspan="2">
+						<input type="submit" value="=" />
+					</th>
+				</tr>
+
+				<tr align="center">
+					<th colspan="2">0</th>
+					<th>,</th>
+					<th>+</th>
+				</tr>
+
+			</table>
 		</form>
 	</body>
 </html>
